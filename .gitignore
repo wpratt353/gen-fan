@@ -1,0 +1,9 @@
+# Working documents
+WorkingDoc/
+
+# Claude
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

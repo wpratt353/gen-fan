@@ -1,0 +1,71 @@
+site_name: "[Setting Name] - Player Guide"
+site_description: A fantasy campaign setting
+site_url: https://your-site.railway.app
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+  font:
+    text: Lato
+    code: Roboto Mono
+  palette:
+    # Light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search:
+      lang: en
+  - awesome-pages
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: docs
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  # Using awesome-pages plugin for automatic navigation
+  # Structure will be inferred from directory structure
+
+extra:
+  social:
+    - icon: fontawesome/solid/dice-d20
+      link: #
+      name: Campaign Home
+
+extra_css:
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/extra.js
