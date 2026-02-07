@@ -3,6 +3,7 @@ WorkingDoc/
 
 # Claude
 .claude/
+.opencode
 
 # OS
 .DS_Store
